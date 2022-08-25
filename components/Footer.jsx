@@ -17,7 +17,7 @@ const Footer = () => {
             rel="noopener noreferrer"><AiOutlineTwitter /></a>
       </p>
       <p>Owner <a href="https://darksitecoder.netlify.app/" style={{fontStyle:"italic"}} target="_blank"
-            rel="noopener noreferrer">"Darksitecoder"</a> </p>
+            rel="noopener noreferrer">Darksitecoder</a> </p>
     </div>
   )
 }

@@ -1,0 +1,35 @@
+import React from 'react'
+import Link from 'next/link'
+
+import { urlFor } from '../lib/client';
+const FooterBanner = ({footerBanner: {discount, largeText1, largeText2, saleTime, smallText, midText, product, buttonText, image, desc}}) => {
+  return (
+    <div className="footer-banner-container">
+      <div className="banner-desc">
+          <div className="left">
+              <p>
+                {discount}
+              </p>
+              <h3>{largeText1}</h3>
+              <h3>{largeText2}</h3>
+              <p>{saleTime}</p>
+          </div>
+          <div className="right">
+              <p>{smallText}</p>
+              <h3>{midText}</h3>
+              <p>{desc}</p>
+              <Link href={`/product/${product}`}>
+                <button type="button" style={{border: '1px solid #f02d34'}}>{buttonText}</button>
+              </Link>
+          </div>
+          <img src={urlFor(image)}
+          widh={500}
+          height={500}
+          className="footer-banner-image"
+          alt="" />
+      </div>
+      </div>
+  )
+}
+
+export default FooterBanner
